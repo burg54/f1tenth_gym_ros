@@ -16,11 +16,12 @@ source ~/.bashrc
 You should now have a virtual environment that can be activated with the command `f1_env`. Invoke that command now, and look for the parenthetical at the command line that indicates it is active.
 
 With the *virtual environment active*, 
-1. git clone https://github.com/f1tenth/f1tenth_gym ~/Downloads/f1tenth_gym/
-2. cd ~/Downloads/f1tenth_gym && git checkout dev-dynamics
-3. pip3 install -e
-4. pip3 install transforms3d
+1. `git clone https://github.com/f1tenth/f1tenth_gym ~/Downloads/f1tenth_gym/`
+2. `cd ~/Downloads/f1tenth_gym && git checkout dev-dynamics`
+3. `pip3 install -e`
+4. `pip3 install transforms3d`
 
+It is recommended to run each of these lines one-by-one.
 ```
 git clone https://github.com/f1tenth/f1tenth_gym ~/Downloads/f1tenth_gym/
 cd ~/Downloads/f1tenth_gym && git checkout dev-dynamics
@@ -39,9 +40,11 @@ Step 2 ensures we are using a version that is compatible with Humble. Step 4 ens
 5. `git clone https://github.com/burg54/f1tenth_gym_ros.git`
 6. `source /opt/ros/humble/setup.bash`
 7. `cd ..`
-8. `rosdep install -i --from-path src --rosdistro humble -y`
+8. `sudo rosdep update`
+9. `rosdep update`
+10. `rosdep install -i --from-path src --rosdistro humble -y`
 
-All in one place, this is:
+All in one place (again, however, recommended to implement line-by-line), this is:
 ```
 cd ~ && mkdir -p f1sim_ws/src
 sudo apt-get update
@@ -50,6 +53,8 @@ cd ~/f1sim_ws/src
 git clone https://github.com/burg54/f1tenth_gym_ros.git
 source /opt/ros/humble/setup.bash
 cd ..
+sudo rosdep update
+rosdep update
 rosdep install -i --from-path src --rosdistro humble -y
 ```
 

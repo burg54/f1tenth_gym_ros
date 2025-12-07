@@ -18,7 +18,7 @@ You should now have a virtual environment that can be activated with the command
 With the *virtual environment active*, 
 1. `git clone https://github.com/f1tenth/f1tenth_gym ~/Downloads/f1tenth_gym/`
 2. `cd ~/Downloads/f1tenth_gym && git checkout dev-dynamics`
-3. `pip3 install -e`
+3. `pip3 install -e .`
 4. `pip3 install transforms3d`
 
 It is recommended to run each of these lines one-by-one.

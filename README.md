@@ -25,7 +25,7 @@ It is recommended to run each of these lines one-by-one.
 ```
 git clone https://github.com/f1tenth/f1tenth_gym ~/Downloads/f1tenth_gym/
 cd ~/Downloads/f1tenth_gym && git checkout dev-dynamics
-pip3 install -e
+pip3 install -e .
 pip3 install transforms3d
 ```
 
